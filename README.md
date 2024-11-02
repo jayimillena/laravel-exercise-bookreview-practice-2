@@ -1,66 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+**README.txt**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+**Title**: Practice Exercise - 1% Daily Commitment for Setting Up a Book Review Application Using Laravel 11
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Objective**:
+This exercise aims to enhance your practical skills by building a book review application using Laravel 11. The project follows the principle of dedicating at least 1% daily effort to self-improvement and skill development.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Overview**:
+The book review application will allow users to register, log in, add books, write reviews, and view reviews by other users. This practice is designed to deepen your understanding of Laravel's MVC architecture, routing, Eloquent ORM, and essential CRUD operations.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**Features**:
+- **User Authentication**: Registration and login system.
+- **Book Management**: Users can add books to the catalog.
+- **Review System**: Users can write, edit, and delete reviews.
+- **Rating**: Optional feature to rate books out of 5 stars.
+- **Responsive UI**: Basic front-end for user interaction.
 
-## Learning Laravel
+**Prerequisites**:
+- PHP 8.2 or later
+- Composer
+- Laravel 11 installed
+- MySQL or a similar database management system
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Installation Steps**:
+1. Clone the repository or set up a new Laravel 11 project.
+   ```bash
+   git clone <repository-link>
+   cd book-review-app
+   ```
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+2. Install Laravel dependencies:
+   ```bash
+   composer install
+   ```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3. Copy the `.env` file and configure your database connection:
+   ```bash
+   cp .env.example .env
+   ```
 
-## Laravel Sponsors
+4. Generate an application key:
+   ```bash
+   php artisan key:generate
+   ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+5. Run migrations to set up the database structure:
+   ```bash
+   php artisan migrate
+   ```
 
-### Premium Partners
+6. Start the development server:
+   ```bash
+   php artisan serve
+   ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+**Daily Commitment**:
+- Spend 30-60 minutes each day working on this project.
+- Break down the tasks into manageable chunks, such as setting up authentication, creating models, and building views.
+- Track your progress and reflect on what you've learned after each session.
 
-## Contributing
+**Directory Structure**:
+- `app/` - Contains the core application files, including models and controllers.
+- `resources/views/` - Contains the Blade templates for the UI.
+- `routes/web.php` - Defines the routes for the application.
+- `public/` - The folder that hosts publicly accessible files.
+- `database/` - Includes migration and seed files for database setup.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**Tips for Success**:
+- Ensure you understand each feature before moving on to the next.
+- Refer to the Laravel 11 documentation for up-to-date information and features.
+- Utilize Laravel Mix or Vite for asset compilation if needed for front-end improvements.
 
-## Code of Conduct
+**Completion Goal**:
+By the end of this exercise, you should have a functional book review application and an enriched understanding of building applications with Laravel 11.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+**Happy Coding!**
 
-## Security Vulnerabilities
+--- 
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Feel free to customize this template according to your needs!
